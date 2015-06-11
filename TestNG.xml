@@ -1,0 +1,26 @@
+<suite name="WebDriver" parallel="tests" thread-count="5">
+   <test name="Test In FireFox" >
+    <parameter name="browser" value="firefox" />
+    <classes>
+      <class name="firsttestngpackage.FirstTestNGFile" />
+    </classes>
+  </test>
+   <test name="Test In Google Chrome" >
+    <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="firsttestngpackage.FirstTestNGFile"></class>
+    </classes>
+  </test> 
+  <test name="Test In IE" >
+    <parameter name="browser" value="InternetExplorer"></parameter>
+    <classes>
+      <class name="firsttestngpackage.FirstTestNGFile"></class>
+    </classes>
+  </test> 
+  <test name="Test In PhantomJS" >
+    <parameter name="browser" value="phantomjs"></parameter>
+    <classes>
+      <class name="firsttestngpackage.FirstTestNGFile"></class>
+    </classes>
+  </test> 
+</suite>
